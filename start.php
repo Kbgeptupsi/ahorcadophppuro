@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div>
-                <img src="images/hangman/0.jpg" id="hangman" alt="hangman"/>
+                <img src="imagenes/ahorcado/0.jpg" id="hangman" alt="hangman"/>
             </div>
             <div>
                 <div id="guessed-word-div">

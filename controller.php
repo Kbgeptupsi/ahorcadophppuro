@@ -21,7 +21,8 @@ switch($action)
         break;
         
     case 1: // Iniciar el dicionario de palabras
-        $lines = file('dictionary.txt');      
+        //https://github.com/javierarce/palabras/blob/master/listado-general.txt repo de los datos
+        $lines = file('datos.txt');      
         $word = $lines[rand(0, count($lines) - 1)];
         $word = substr($word, 0, strlen($word) - 1);
         $_SESSION['word'] = trim($word);
@@ -39,13 +40,13 @@ switch($action)
         switch($level)
         {
             case 0: 
-                $_SESSION['lives'] = 20;
-                break;
-            case 1: 
                 $_SESSION['lives'] = 10;
                 break;
-            case 2: 
+            case 1: 
                 $_SESSION['lives'] = 5;
+                break;
+            case 2: 
+                $_SESSION['lives'] = 2;
                 break;                
         }
         

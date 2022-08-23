@@ -20,11 +20,11 @@
                     <div id="levels-div">
                         <span id="level">
                             <input type="radio" name="level" checked="checked" id="level_0" value="0">
-                                <label for="level_0">Principiante 20 Intentos.</label><br>
+                                <label for="level_0">Principiante 10 Intentos.</label><br>
                             <input type="radio" name="level" id="level_1" value="1">
-                                <label for="level_1">Medio 10 Intentos.</label><br>
+                                <label for="level_1">Medio 5 Intentos.</label><br>
                             <input type="radio" name="level" id="level_2" value="2">
-                                <label for="level_2">Dificil 5 Intentos.</label>
+                                <label for="level_2">Dificil 2 Intentos.</label>
                          </span>
                     </div>
 
