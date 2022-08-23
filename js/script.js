@@ -1,11 +1,4 @@
-var boo_audio = document.createElement("audio");
-boo_audio.setAttribute("src", "sounds/boo.mp3");
 
-var applause_audio = document.createElement("audio");
-applause_audio.setAttribute("src", "sounds/applause.mp3"); 
-
-var blop_audio = document.createElement("audio");
-blop_audio.setAttribute("src", "sounds/blop.mp3"); 
 
 var winOrLose = false;
 
@@ -25,7 +18,6 @@ $.ajax({
 		$("#lives-left").text(data.lives);
 		$("#guessed-word-div").html(data.guessedWord);
 		$(this).addClass("display-none");
-		blop_audio.play();
 		}
 		else
 		{
@@ -37,14 +29,12 @@ $.ajax({
 			$("#the-word-was-div").html(data.word);
 			$("#the-word-was-div").removeClass("display-none");
 			$("#play-again-div").removeClass("display-none");
-			boo_audio.play();
 		}
 		else
 		{
 			winOrLose = true;
 			$("#guessed-word-div").html(data.guessedWord);
 			$("#play-again-div").removeClass("display-none");
-			applause_audio.play();
 		}
 		}
 	}
