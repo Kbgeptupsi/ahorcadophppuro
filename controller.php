@@ -87,7 +87,7 @@ switch($action)
                                 $_SESSION['image'] = 10;
                         break;
                 }
-                $response['image'] = 'images/hangman/' . $_SESSION['image'] . '.jpg';
+                $response['image'] = 'imagenes/ahorcado/' . $_SESSION['image'] . '.jpg';
                 
                 if($_SESSION['lives'] == 0)
                 {
